@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "248923034731",
+    "project_id": "databaserepositorycrocodiccore",
+    "storage_bucket": "databaserepositorycrocodiccore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248923034731:android:11ae84f5555b2c60134d2e",
+        "android_client_info": {
+          "package_name": "com.example.databaserepository_crocodiccore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248923034731-e2q49rqnsr763db4antqc2u5kca9556c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.databaserepository_crocodiccore",
+            "certificate_hash": "c347bd5d00f0eb75da3e5b23f1f8922721a86eba"
+          }
+        },
+        {
+          "client_id": "248923034731-p4qv2fn8sbp41jjit866b9t13juf429v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9cfoiAgBI8oo48AtxqyNUC8Ir1ohLl44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248923034731-p4qv2fn8sbp41jjit866b9t13juf429v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Database Repository_Crocodic Core</string>
+    <string name="hello_there">Hello There!</string>
+    <string name="this_your_friend_list">This Your Friend List</string>
+    <string name="add_your_friend">Add Your Friend</string>
+    <string name="frielist">FrieList</string>
+    <string name="icon">Icon</string>
+    <string name="name">Name</string>
+    <string name="gender">Gender</string>
+    <string name="school">School</string>
+    <string name="type_here">Type Here...</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="change_the_data">Change The Data</string>
+</resources>

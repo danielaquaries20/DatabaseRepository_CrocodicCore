@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <variable
+            name="activityAdd"
+            type="com.example.databaserepository_crocodiccore.AddFriendActivity" />
+
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/value_15"
+        tools:context=".AddFriendActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_your_friend"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_15"
+            android:text="@string/name"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_45"
+            android:layout_marginTop="@dimen/value_5"
+            android:background="@drawable/background_custom_edit_text_1"
+            android:hint="@string/type_here"
+            android:inputType="textCapWords"
+            android:paddingStart="@dimen/value_10"
+            android:paddingTop="@dimen/value_5"
+            android:paddingEnd="@dimen/value_10"
+            android:paddingBottom="@dimen/value_5"
+            android:text='@={activityAdd.name}' />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_15"
+            android:text="@string/gender"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_45"
+            android:layout_marginTop="@dimen/value_5"
+            android:background="@drawable/background_custom_edit_text_1"
+            android:hint="@string/type_here"
+            android:inputType="textCapWords"
+            android:paddingStart="@dimen/value_10"
+            android:paddingTop="@dimen/value_5"
+            android:paddingEnd="@dimen/value_10"
+            android:paddingBottom="@dimen/value_5"
+            android:text='@={activityAdd.gender}' />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_15"
+            android:text="@string/school"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_45"
+            android:layout_marginTop="@dimen/value_5"
+            android:background="@drawable/background_custom_edit_text_1"
+            android:hint="@string/type_here"
+            android:inputType="textCapWords"
+            android:paddingStart="@dimen/value_10"
+            android:paddingTop="@dimen/value_5"
+            android:paddingEnd="@dimen/value_10"
+            android:paddingBottom="@dimen/value_5"
+            android:text='@={activityAdd.school}' />
+
+
+        <Button
+            android:id="@+id/btnSaveFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/value_25"
+            android:backgroundTint="@color/colorRed"
+            android:text="@string/save" />
+
+
+    </LinearLayout>
+
+</layout>
