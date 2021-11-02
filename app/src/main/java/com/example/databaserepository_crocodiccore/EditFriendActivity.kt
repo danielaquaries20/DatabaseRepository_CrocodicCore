@@ -21,6 +21,8 @@ class EditFriendActivity : AppCompatActivity() {
     var name = ""
     var gender = ""
     var school = ""
+    var phoneNumber = ""
+    var hobby = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,12 +35,14 @@ class EditFriendActivity : AppCompatActivity() {
         name = intent.getStringExtra("name") ?: ""
         gender = intent.getStringExtra("gender") ?: ""
         school = intent.getStringExtra("school") ?: ""
+        phoneNumber = intent.getStringExtra("phone_number") ?: ""
+        hobby = intent.getStringExtra("hobby") ?: ""
 
 
         binding.btnSaveEdit.setOnClickListener {
             Log.d("tes data EditFriend", "$name $gender $school")
-            if (name.isNotEmpty() && gender.isNotEmpty() && school.isNotEmpty()) {
-                val friend = Friend(name, gender, school).apply {
+            if (name.isNotEmpty() && gender.isNotEmpty() && school.isNotEmpty() && phoneNumber.isNotEmpty() && hobby.isNotEmpty()) {
+                val friend = Friend(name, gender, school, phoneNumber, hobby).apply {
                     id = idFriend
                 }
 
@@ -54,7 +58,7 @@ class EditFriendActivity : AppCompatActivity() {
 
 
         binding.btnDelete.setOnClickListener {
-            val friend = Friend(name, gender, school).apply {
+            val friend = Friend(name, gender, school, phoneNumber, hobby).apply {
                 id = idFriend
             }
 

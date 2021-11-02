@@ -97,6 +97,50 @@
             android:paddingBottom="@dimen/value_5"
             android:text='@={activityEdit.school}' />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_15"
+            android:text="@string/phone_number"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_45"
+            android:layout_marginTop="@dimen/value_5"
+            android:background="@drawable/background_custom_edit_text_1"
+            android:hint="@string/type_here"
+            android:inputType="textCapWords"
+            android:paddingStart="@dimen/value_10"
+            android:paddingTop="@dimen/value_5"
+            android:paddingEnd="@dimen/value_10"
+            android:paddingBottom="@dimen/value_5"
+            android:text='@={activityEdit.phoneNumber}' />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_15"
+            android:text="@string/hobby"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_45"
+            android:layout_marginTop="@dimen/value_5"
+            android:background="@drawable/background_custom_edit_text_1"
+            android:hint="@string/type_here"
+            android:inputType="textCapWords"
+            android:paddingStart="@dimen/value_10"
+            android:paddingTop="@dimen/value_5"
+            android:paddingEnd="@dimen/value_10"
+            android:paddingBottom="@dimen/value_5"
+            android:text='@={activityEdit.hobby}' />
+
 
         <RelativeLayout
             android:layout_width="match_parent"

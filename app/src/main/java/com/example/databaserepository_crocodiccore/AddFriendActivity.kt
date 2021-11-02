@@ -20,6 +20,8 @@ class AddFriendActivity : AppCompatActivity() {
     var name = ""
     var gender = ""
     var school = ""
+    var phoneNumber = ""
+    var hobby = ""
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,9 +32,9 @@ class AddFriendActivity : AppCompatActivity() {
         database = MyDatabase.getDatabase(this)
 
         binding.btnSaveFriend.setOnClickListener {
-            Log.d("tes data AddFriend", "$name $gender $school")
-            if (name.isNotEmpty() && gender.isNotEmpty() && school.isNotEmpty()) {
-                val friend = Friend(name, gender, school)
+            Log.d("tes data AddFriend", "$name $gender $school $phoneNumber")
+            if (name.isNotEmpty() && gender.isNotEmpty() && school.isNotEmpty() && phoneNumber.isNotEmpty() && hobby.isNotEmpty()) {
+                val friend = Friend(name, gender, school, phoneNumber, hobby)
 
                 Executors.newSingleThreadExecutor().execute {
                     database.daoFriend().insert(friend)

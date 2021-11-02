@@ -4,6 +4,8 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.migration.Migration
+import androidx.sqlite.db.SupportSQLiteDatabase
 import com.example.databaserepository_crocodiccore.database.friend.Friend
 import com.example.databaserepository_crocodiccore.database.friend.FriendDAO
 import kotlinx.coroutines.internal.synchronized
@@ -11,7 +13,7 @@ import kotlinx.coroutines.internal.synchronized
 
 @Database(
     entities = [Friend::class],
-    version = 1,
+    version = 3,
     exportSchema = false
 )
 
@@ -35,10 +37,18 @@ abstract class MyDatabase : RoomDatabase() {
                     MyDatabase::class.java,
                     "my_database"
                 )
+                    .addMigrations(MIGRATION_2_3)
                     .fallbackToDestructiveMigration()
                     .build()
                 INSTANCE = instance
                 return instance
+            }
+        }
+
+        //Migration from 2 to 3 , Room 3..2..1..0
+        val MIGRATION_2_3 = object : Migration(2, 3) {
+            override fun migrate(database: SupportSQLiteDatabase) {
+                database.execSQL("ALTER TABLE Friend ADD COLUMN hobby TEXT NOT NULL DEFAULT ''")
             }
         }
     }

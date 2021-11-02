@@ -12,4 +12,6 @@
     <string name="save">Save</string>
     <string name="delete">Delete</string>
     <string name="change_the_data">Change The Data</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="hobby">Hobby</string>
 </resources>

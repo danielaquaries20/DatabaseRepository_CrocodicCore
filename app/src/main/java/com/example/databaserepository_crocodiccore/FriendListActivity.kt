@@ -32,6 +32,8 @@ class FriendListActivity : AppCompatActivity() {
                     putExtra("name", it.name)
                     putExtra("gender", it.gender)
                     putExtra("school", it.school)
+                    putExtra("phone_number", it.phoneNumber)
+                    putExtra("hobby", it.hobby)
                 }
                 startActivity(intent)
             }
@@ -44,6 +46,8 @@ class FriendListActivity : AppCompatActivity() {
 //                    putExtra("name", it.name)
 //                    putExtra("gender", it.gender)
 //                    putExtra("school", it.school)
+//                    putExtra("phone_number", it.phoneNumber)
+//                    putExtra("hobby", it.hobby)
 //                }
 //                startActivity(intent)
 //            }

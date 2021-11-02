@@ -7,7 +7,9 @@ import androidx.room.PrimaryKey
 data class Friend(
     var name: String,
     var gender: String,
-    var school: String
+    var school: String,
+    var phoneNumber: String,
+    var hobby: String
 ) {
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0
