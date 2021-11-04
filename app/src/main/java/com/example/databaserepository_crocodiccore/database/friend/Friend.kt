@@ -8,7 +8,7 @@ data class Friend(
     var name: String,
     var gender: String,
     var school: String,
-    var phoneNumber: String,
+    var phone: String,
     var hobby: String
 ) {
     @PrimaryKey(autoGenerate = true)

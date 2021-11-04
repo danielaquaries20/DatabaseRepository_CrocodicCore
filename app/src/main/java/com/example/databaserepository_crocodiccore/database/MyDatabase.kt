@@ -13,7 +13,7 @@ import kotlinx.coroutines.internal.synchronized
 
 @Database(
     entities = [Friend::class],
-    version = 3,
+    version = 6,
     exportSchema = false
 )
 
@@ -51,5 +51,12 @@ abstract class MyDatabase : RoomDatabase() {
                 database.execSQL("ALTER TABLE Friend ADD COLUMN hobby TEXT NOT NULL DEFAULT ''")
             }
         }
+
+//        val MIGRATION_4_5 = object : Migration(4, 5) {
+//            override fun migrate(database: SupportSQLiteDatabase) {
+//                database.execSQL("ALTER TABLE Friend RENAME COLUMN phoneNumber TO phone ")
+//            }
+//        }
+
     }
 }

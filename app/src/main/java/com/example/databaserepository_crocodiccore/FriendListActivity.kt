@@ -32,7 +32,7 @@ class FriendListActivity : AppCompatActivity() {
                     putExtra("name", it.name)
                     putExtra("gender", it.gender)
                     putExtra("school", it.school)
-                    putExtra("phone_number", it.phoneNumber)
+                    putExtra("phone_number", it.phone)
                     putExtra("hobby", it.hobby)
                 }
                 startActivity(intent)
